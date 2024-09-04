@@ -44,11 +44,11 @@ app.post('/employees', (request, response) => {
 
 // 05. Dealing with Router parameters
 // Return a single item
-app.get('/employees/:name', (request, response) => {
+app.get('/employees/:ename', (request, response) => {
     // What's passed here will appear in terminal
     // console.log(request.params.employee); // Peter
-    const {empName} = request.params;
-    const myEmployee = empList.find((p) => p.name === empName);
-    console.log(request.params.name);
+    const {ename} = request.params;
+    const myEmployee = empList.find((p) => p.ename === ename);
+    console.log(request.params.ename);
     response.send(myEmployee);  
 })
