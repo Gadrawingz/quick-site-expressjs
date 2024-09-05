@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "This is my site made entirely with express.js and pure html, js and css",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "express": "^4.19.2"
   },
   "devDependencies": {
